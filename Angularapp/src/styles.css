@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+div.container {
+  margin: 5px 5px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mat-toolbar.tool1 {
+  width: 1000px;
+}
+.mat-toolbar.tool2 {
+  height: 40px;
+  width: 1339px;
+  border-radius: 10px;
+  border-color: black;
+  border-style: double;
+}
+
+.mat-toolbar.mat-primary {
+  background: white;
+  color: black;
+}
+
+.mat-icon.mat-primary {
+  background: white;
+  color: black;
+}
+
+.example-icon {
+  background: white;
+  border-color: white;
+}
+
+form.normal-form {
+  margin: 10px;
+}
+
+.fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+  flex: 1 1 auto;
+}

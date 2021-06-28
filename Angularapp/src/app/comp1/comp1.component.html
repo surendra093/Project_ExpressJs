@@ -1,0 +1,98 @@
+<div class="container">
+  <mat-toolbar class="tool1" color="primary">
+    <span
+      ><img src="assets/images/logo.png" alt="logo" width="75" height="50"
+    /></span>
+
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon aria-hidden="false" aria-label="Example home icon"
+        >menu</mat-icon
+      >
+    </button>
+
+    &nbsp;
+    <span>Job openings</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</div>
+
+<br />
+
+<div class="container">
+  <mat-toolbar class="tool2">
+    <span><b>HR</b></span>
+    <mat-icon class="arrow1">chevron_right</mat-icon>
+    <mat-icon class="arrow2">chevron_right</mat-icon>
+    <span><b>Careers</b></span>
+    <mat-icon class="arrow1">chevron_right</mat-icon>
+    <mat-icon class="arrow2">chevron_right</mat-icon>
+    <span><b>Job openings</b></span>
+  </mat-toolbar>
+</div>
+
+<br />
+<div class="col md-8">
+  <div class="form-group">
+    <input
+      type="text"
+      class="form-control width100"
+      id="exampleInputEmail1"
+      aria-describedby="emailHelp"
+      placeholder="Opening date/Job title/Location/status"
+    />
+  </div>
+  <button class="btn" (click)="onCreate()">Add new openings</button>
+</div>
+<br />
+<h3 style="margin-left: 420px"><i>****No Current Job openings****</i></h3>
+<br />
+
+<!--
+<div>
+  <div *ngFor="let opening of openings">
+    <div class="col-md-3">
+      {{ opening.jobtitle }}
+    </div>
+    <div class="col-md-3">
+      {{ opening.location }}
+    </div>
+    <div>
+      <input
+        type="button"
+        (click)="deleteOpening(opening._id)"
+        value="Delete"
+        class="btn btn-danger"
+      />
+    </div>
+  </div>
+</div>
+-->
+
+<div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Job title</th>
+        <th>Location</th>
+        <th></th>
+      </tr>
+      <tr *ngFor="let opening of openings">
+        <td>{{ opening.jobtitle }}</td>
+        <td>{{ opening.location }}</td>
+        <td>
+          <a class="action-btn" (click)="updateOpening(opening)">
+            <i class="material-icons">edit</i>
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a class="action-btn" (click)="deleteOpening(opening._id)">
+            <i class="material-icons">delete</i>
+          </a>
+        </td>
+      </tr>
+    </thead>
+  </table>
+</div>

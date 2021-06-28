@@ -1,0 +1,38 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.normal-form {
+  margin-top: 0px;
+}
+
+.controles-container {
+  width: 100%;
+  padding: 5%;
+  /*margin-bottom: 0px;*/
+}
+
+.controles-container > * {
+  width: 25%;
+}
+
+.btn1 {
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: yellow;
+  border-color: black;
+}
+.btn2 {
+  margin-bottom: 35px;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: yellow;
+  border-color: black;
+}
+
+.skills {
+  right: 320px;
+  width: 280px;
+}

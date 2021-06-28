@@ -1,0 +1,36 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+div.row {
+  margin-left: 10px;
+}
+
+.form-group {
+  margin-left: 10px;
+  margin-right: 700px;
+}
+.form-control {
+  border-radius: 20px;
+  border-width: 2.2px;
+  border-color: black;
+}
+input {
+  background-image: url("search.png");
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.btn {
+  margin-top: -50px;
+  margin-left: 1150px;
+  background-color: yellow;
+  border-color: black;
+}
+
+.table {
+  margin-left: 20px;
+  margin-right: 200px;
+  right: -100px;
+}
